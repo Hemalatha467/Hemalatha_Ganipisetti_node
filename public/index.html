@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemalatha portfolio</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> 
+    <style>
+        body {
+    font-family: "Times New Roman", Times, serif;
+    line-height:20px;
+     background-color: #F8FFF8; 
+}
+
+#container {
+    height: 100vw;
+    display: contents;
+}
+
+h2 {
+    color: #555; 
+    padding: 1%;
+}
+
+/* Header section  */
+nav.navbar {
+    display: grid;
+    background-color: #F8F8FF;
+    padding: 1%;
+    border: 5px solid white;
+    grid-template-columns: repeat(7,1fr);
+    gap:15px;
+    text-align: center;
+
+}
+
+
+nav.navbar a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color:#2e475d; 
+}
+
+nav.navbar a:hover {
+    color: rgb(57, 130, 181);
+    font-weight: bold;
+
+}   
+
+.navbar a.icon { 
+    float: right; 
+    display: none; 
+} 
+
+
+ .navbar .responsive a.icon { 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+} 
+
+.navbar.responsive a { 
+    float: none; 
+    display: block; 
+    text-align: left; 
+}  
+
+/* About me section style */
+#about {
+    background-color: #FCF8FF;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 5px solid rgb(200, 196, 196);
+    margin-top: 10px;
+    margin-left:0;
+
+}
+
+#aboutImg{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#aboutImg img {
+    width: 100%; 
+     max-width: 300px; 
+     max-height: 310px;
+   
+}
+
+#aboutImg figcaption {
+    text-align: center;
+    font-weight: bold;
+    color: #555; 
+}
+
+#aboutme {
+    border-radius: 8px;
+    padding: 10px; 
+}
+
+#aboutme h3, #aboutme p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555; 
+}
+
+.skillset {
+    float: left;
+    width: 20%; 
+    font-size: 1.1em ;
+    color: #555; 
+
+}
+/* About me section style ends*/
+
+/* education me section style */
+
+.edu-achieve {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    padding:10px;
+}
+.edu-achieve h2{
+    text-align: center;
+}
+#edu-heading {
+    margin-right: 10%;
+}
+#education-achievements {
+    background-color: #F8FCFF;
+    padding: 15px;
+    border: 5px solid rgb(200, 196, 196);
+    margin-top: 20px;    
+}
+
+#edu, #achievements {
+   
+    border: 2px solid rgb(165, 208, 237);
+
+}
+
+.education-block, .achievement-block {
+    width: 100%;
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.education-block img, .achievement-block img{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    margin-bottom:2px;
+}
+
+.edu-text h3, .award-text h3{
+    color: rgb(57, 130, 181);  
+    font-size: 1.3em;
+    margin:0;
+
+}
+
+.edu-text p, .award-text p  {
+    color: #555; 
+    margin: 0;
+}
+/* education section style ends */
+
+/* Project, blogs section */
+
+.project-wrapper, .blog-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap:10px;
+}
+
+#projects,#blogs{
+    background-color: #FFF8F8;
+    /* padding: 20px; */
+    border: 5px solid rgb(200, 196, 196);
+    margin-top: 20px;
+}
+
+
+.project img, .blog img {
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.project  p, .blog p {
+    text-align: justify;
+    color: #555;
+
+}
+
+.project figcaption, .blog figcaption {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(57, 130, 181);  
+    text-align: center;
+}
+
+/* Project, blogs section ends */
+
+/* experience section style */
+#experience {
+    background-color: white;
+    /* box-shadow: 5px 10px 18px #888888; */
+    padding: 1%;
+    border: 5px solid rgb(200, 196, 196);
+    overflow: hidden; 
+    margin-top: 20px;
+}
+
+.exp p {
+    color: rgb(57, 130, 181); 
+    font-size: 1.2em;
+    justify-content:space-evenly;
+}
+
+ .exp span{
+    float: right;
+} 
+
+.exp li {
+    color: #555;
+    /* font-size: large; */
+    line-height: 1.3em;
+}
+/* experience section style ends */
+
+/* footer section style */
+footer {
+    margin-top:1%;
+    display: grid;
+    grid-template-columns: 0.8fr auto;
+    background-color: #F8F8FF;
+    border: 5px solid white;
+    align-items: center;
+   }
+   .footer-links  {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+   footer p{
+    padding-left: 10px;
+   }
+   
+   footer img {
+     width: 30px; 
+     height: 30px;
+   }
+ /* footer section style ends*/
+
+ /* Media queries */
+@media (max-width: 500px) {
+    #about,
+    #education-achievements .edu-achieve,
+    .project-wrapper,
+    .blog-wrapper,
+    footer
+    {
+        grid-template-columns: 1fr;
+    }
+    
+    h2,.footer-links, .credits p{
+        text-align: center;
+    }
+    .edu-text h3, .award-text h3, .exp p, #aboutme h3, #aboutme p, .exp li, .skillset {  
+        font-size: 1.1em !important;
+    }
+    .footer-links a {
+        padding: 2px;
+    }
+     
+    
+
+    
+}
+
+@media (min-width:500px) and (max-width:850px) {
+    #education-achievements .edu-achieve, .project-wrapper, .blog-wrapper
+    {
+        grid-template-columns: 1fr;
+    }
+    h2{
+        text-align: center;
+    }
+    #aboutme h2 {
+        text-align: left;
+    }
+}
+
+
+@media (min-width: 700px) and (max-width: 980px) {
+    #about {
+        display: grid;
+        grid-template-columns: 1fr 2fr; 
+        align-items: center; 
+    }
+
+    #aboutImg {
+        justify-self: center; 
+    }
+   
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+    #about {
+        display: grid;
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+        "image"
+        "aboutme";
+        align-items: center; 
+        
+    }
+    #aboutImg {
+        grid-area: image;
+        align-items: center;
+    }
+    #aboutme{
+        grid-area: aboutme;
+        align-items: center;
+        text-align: justify;
+    }  
+}
+
+@media screen and (max-width: 900px) { 
+    .navbar a:not(:first-child){
+        display: none;
+        padding: 10px;
+    } 
+    .navbar a.icon { 
+        display: block; 
+        padding: 5px;
+    } 
+    .navbar {
+        display: block !important;
+    }
+   
+
+    .navbar.responsive {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin:3%;
+    }
+    .navbar.responsive a {
+      display: block;
+      text-align: left;
+      padding: 10px;
+    }
+   
+} 
+
+@media screen and (min-width: 901px) {
+    .navbar a.icon{
+        display: none;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav class="navbar" id="myNav">
+                <a href="#home" id="home"> Home  </a>
+                <a href="#about" > About Me </a>
+                <a href="#edu" > Education </a>
+                <a href="#achievements"> Achievements </a>
+                <a href="#projects" > Projects </a>
+                <a href="#experience" > Experience </a>
+                <a href="#blogs" > Blogs </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunc()"> 
+                    <i class="fas fa-bars"></i> 
+                </a>
+            </nav>
+        </header>
+        <section id="about">
+            <figure id="aboutImg">
+                <img src="https://www.carvermostardi.com/cmos/wp-content/uploads/2018/05/professional_headshots_tampa_011.jpg" 
+                     alt="profile-image" >
+                <figcaption>
+                  Hemalatha Ganipisetti
+                  </figcaption>
+            </figure>
+            <div id="aboutme">
+                 <h2>About Me</h2>
+                 <p>
+                    Motivated and experienced software developer with expertise in Golang, SQL, MongoDB.
+                     With 2 years of experience in developing backend APIs for multi-tenant healthcare projects using Agile methodology,
+                      I have a strong track record of delivering innovative solutions that meet business requirements.
+                </p>
+                <h3>Skills</h3>
+                    <ul class="skillset">
+                        <li> Java </li>
+                        <li> HTML </li>
+                        <li> CSS  </li>
+                        <li> Go   </li>
+                    </ul>
+                    <ul class="skillset">
+                        <li> MongoDB </li>
+                        <li> Python </li>
+                        <li> MySQL </li>
+                        <li> APIs </li>
+                    </ul>
+                    <ul class="skillset">
+                        <li> DBMS </li>
+                        <li> Git </li>
+                        <li> Informatica </li>
+                        <li> Jira </li>
+                    </ul>
+                    <ul class="skillset">
+                        <li> Advanced Database System </li>
+                        <li> C </li>
+                        <li> Agile methodologies </li>
+                        <li> Data Structures</li>
+
+                    </ul>
+                
+            </div>
+        </section>
+        <div id="education-achievements">
+            <div class ="edu-achieve">
+                <section id="edu">
+                    <h2>Education</h2>
+                    <div class = "education-block">
+                        <img src = "https://www.carolina.com/images/product/large/university_new_haven_logo.jpg" alt ="newhaven-logo">
+                        <div class="edu-text">
+                            <h3>Masters in Computer Science</h3>
+                            <p>University of New Haven - Connecticut,US</p>
+                        </div>
+                    </div>
+                    <div class = "education-block">
+                        <img src = "https://pbs.twimg.com/profile_images/1203658757307170816/1gR_eRFZ_400x400.jpg" alt ="rgukt-logo">
+                        <div class="edu-text">
+                            <h3>Bachelors in Computer Science and Engineering</h3>
+                            <p>Rajiv Gandhi University of Knowledge Technologies - Nuzvid,India</p>
+                        </div>
+                    </div>
+                    <div class = "education-block">
+                        <img src = "https://pbs.twimg.com/profile_images/1203658757307170816/1gR_eRFZ_400x400.jpg" alt ="rgukt-logo">
+                        <div class="edu-text">
+                            <h3>Higher Secondary Schooling  in MPC</h3>
+                            <p>Rajiv Gandhi University of Knowledge Technologies - Nuzvid,India</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="achievements">
+                    <h2>Achievements</h2>
+                    <div class="achievement-block">
+                        <img src="https://www.newportbeach.com/wp-content/uploads/2014/03/awards-event-300x201.jpg" alt="achievement award">
+                        <div class="award-text">
+                            <h3>Prathibha Award </h3>
+                            <p> Award for excelling in Higher Secondary School</p>
+                        </div>
+                    </div>
+                    <div class="achievement-block">
+                        <img src="https://png.pngtree.com/png-clipart/20220603/original/pngtree-best-performance-png-png-image_7900043.png" alt="achievement award">
+                        <div class="award-text">
+                            <h3> Best Performer 2020 </h3>
+                            <p> Certificate for securing highest GPA in CS </p>
+                        </div>
+                    </div>
+                    <div class="achievement-block">
+                        <img src="https://m.media-amazon.com/images/I/61etsw7N4eL._SL1168_.jpg" alt="achievement award">
+                        <div class="award-text">
+                            <h3> NCC </h3>
+                            <p> Successfully completed 3 years of NCC </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+       
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-wrapper">
+                <div class="project">
+                    <figure>
+                        <img src="https://static.vecteezy.com/system/resources/previews/000/640/922/original/landing-page-template-of-online-shopping-illustration-concept-modern-flat-design-concept-of-web-page-design-for-website-and-mobile-website-vector-illustration.jpg" 
+                            alt="project-image" >
+                        <figcaption>
+                            Shop Me
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure> 
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="https://i5.walmartimages.com/asr/2f515337-c2b1-4fe2-8818-95f7f885a186.8c124b6e92968704199d289e00b304b4.jpeg" 
+                            alt="project-image" >
+                        <figcaption>
+                            Tic-Tac-Toe Game
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="https://boldit.co.uk/wp-content/uploads/2023/10/Project-Delivery-min.jpg" 
+                            alt="project-image" >
+                        <figcaption>
+                        Administration Scrapper
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure>
+                    
+                </div>
+            </div>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="exp">
+                <p><b>Software Engineer / Techwave Consulting India – Hyderabad, India </b> <span>	08/2021 – 12/2023 </span> </p>
+                <ul>
+                    <li>Worked on a Multi-Tenant Healthcare Product and Multi-Tenant Food Distribution Product</li>
+                    <li>Built new features requested by the customers and enhanced existing APIs performance in Go microservices framework.</li>
+                    <li>Collaborated with stakeholders to gather business requirements for enhancements and change requests.</li>
+                    <li>Worked with database services like MySQL, MongoDB</li>
+                    <li>Worked with ETL tools like Informatica to build workflows for connecting & fetching data from different data sources.</li>
+                    <li>Created test cases based on user stories and business requirements.</li>
+                </ul>
+            </div>
+            <div class="exp">
+                <p><b>Software Engineer Trainee / Techwave Consulting India – Hyderabad, India</b>	<span> 11/2020 – 07/2021 </span> </p>
+                <ul>
+                    <li>Trained in Java and Go language and built multiple APIs; debugged the issues and tested using Postman.	</li>
+                </ul>
+        </section>
+        <section id="blogs">
+            <h2>Blogs</h2>
+            <div class="blog-wrapper">
+                <div class="blog">
+                    <figure>
+                        <img src="https://cdn.pixabay.com/photo/2016/06/09/08/49/blog-1445367_1280.jpg" 
+                            alt="blog-image" >
+                        <figcaption>
+                        How to use files in Go
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure>
+                </div>
+                <div class="blog">
+                    <figure>
+                        <img src="https://www.hallaminternet.com/wp-content/uploads/2020/01/Is-blogging-relevant-anymore.jpeg" 
+                            alt="blog-image" >
+                        <figcaption>
+                        MongoDB with Go
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure>
+                    
+                </div>
+                <div class="blog">
+                    <figure>
+                        <img src="https://www.ecampusnews.com/files/2016/01/blogs.jpg" 
+                            alt="blog-image" >
+                        <figcaption>
+                        Dealing with JSON files in Go
+                        </figcaption>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="credits">
+                <p>&copy;&nbsp;&nbsp;Hemalatha Ganipisetti All rights reserved</p>
+            </div>
+            <div class ="footer-links">
+                <a href="https://twitter.com/"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?t=st=1732692829~exp=1732696429~hmac=283e0188e895d99977c755fc6665ddb99c8e6dde37e854649de8e2e596c9c289&w=740" alt="twitter"></a>
+                <a href="https://github.com/"><img src="https://pngimg.com/uploads/github/github_PNG80.png" alt="github"></a>
+                <a href="https://www.linkedin.com/in/hemalatha-ganipisetti-699b4a171/"><img src="https://pngimg.com/uploads/linkedIn/linkedIn_PNG8.png" alt="linkedin"></a>
+                <a href="mailto:someone@example.com"><img src="https://logos-world.net/wp-content/uploads/2020/11/Gmail-Logo-2013-2020.png" alt="gmail"></a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function myFunc() { 
+            let x = document.getElementById("myNav"); 
+            console.log(x.className)
+            if ( x.className === "navbar") { 
+                x.className += " responsive"; 
+            } else { 
+                x.className = "navbar"; 
+            } 
+        } 
+    </script>
+</body>
+</html>
