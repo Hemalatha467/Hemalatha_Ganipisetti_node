@@ -1,0 +1,58 @@
+{
+    "playlist": [
+        {
+            "songId":1,
+            "title":"Dynamite",
+            "singer":"BTS",
+            "albumName":"BE",
+            "songDuration":"3:19",
+            "image":"https://images.genius.com/df009633e4702b3838c793c7fd97adf3.1000x1000x1.png",
+            "releasedDate":"August 21,2020"
+        },
+        {
+            "songId":2,
+            "title":"Blank Space",
+            "singer":"Taylor Swift",
+            "albumName":"1989",
+            "songDuration":"3:51",
+            "image":"https://i.scdn.co/image/ab67616d0000b2739abdf14e6058bd3903686148",
+            "releasedDate":"November 10,2014"
+        },
+        {
+            "songId":3,
+            "title":"Standing Next to You",
+            "singer":"Jungkook",
+            "albumName":"GOLDEN",
+            "songDuration":"3:26",
+            "image":"https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Fjungkook-bts-solo-album-golden-digital-album-cover-v0-56oa5n1r52yb1.jpg%3Fs%3D9afaa9495eaabccd76ec97027761e52c7d9422c9&rdt=40514",
+            "releasedDate":"November 3,2023"
+        },
+        {
+            "songId":4,
+            "title":"Darl+ing",
+            "singer":"Seventeen",
+            "albumName":"FACE THE SUN",
+            "songDuration":"2:56",
+            "image":"https://i1.sndcdn.com/artworks-VISGoRo1GxYblkyF-X7BzBQ-t500x500.jpg",
+            "releasedDate":"April 15,2022"
+        },
+        {
+            "songId":5,
+            "title":"As It Was",
+            "singer":"Harry Styles",
+            "albumName":"Harry's House",
+            "songDuration":"2:47",
+            "image":"https://i.pinimg.com/736x/fc/f6/46/fcf6469327339520ad08ea108d83668e.jpg",
+            "releasedDate":"April 1,2022"
+        },
+        {
+            "songId":6,
+            "title":"Who Says",
+            "singer":"Selena Gomez",
+            "albumName":"When the Sun Goes Down",
+            "songDuration":"3:15",
+            "image":"https://m.media-amazon.com/images/I/81NYl6HJdKL._SS500_.jpg",
+            "releasedDate":"March 14,2011"
+        }
+    ] 
+}
