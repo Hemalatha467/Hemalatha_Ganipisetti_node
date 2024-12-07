@@ -42,7 +42,7 @@ const server = http.createServer((req, res) =>{
             }catch (err) {
                 console.error(err);
                 res.writeHead(500, {'Content-Type': 'text/plain'});
-                res.end('server failed to handle the request');
+                res.end('Server unable to get data from database');
               } finally {
                 await mongo_client_connection.close();
               }
